@@ -1,0 +1,162 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{padding: 0;margin: 0;}
+li,ul,ol{
+    list-style: none;
+}
+em,i{
+    font-style: normal;
+}
+.jk_head_top{
+    width: 100%;
+    height: 35px;
+    z-index: 99999999;
+    border-bottom: 1px solid #e5e5e5;
+    background: #f5f5f5;
+    border-top: 1px solid #fff;
+}
+.jk_head_top1{
+    width: 1210px;
+    margin: 0px auto;
+}
+.jk_head_top .jk_head_top_left{
+    float: left;
+    line-height: 35px;
+    color: #666;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+}
+.jk_head_top .jk_head_top_left a{
+    text-decoration: none;
+    color: #666;
+    margin-right: 30px;
+
+}
+.jk_head_top .jk_head_top_left a:hover{
+    color: blue;
+}
+.jk_head_top .jk_head_top_left .jk_hy{
+    margin-right: 35px;
+}
+.jk_head_top .jk_head_top_right{
+    float: right;
+    height: 35px;
+}
+.jk_head_top .jk_head_top_right .list{
+    float: left;
+    padding: 0;
+    position: relative;
+    z-index: 9999999;
+    width: 88px;
+    height: 35px;
+    cursor: pointer;
+    color: #666;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    line-height: 35px;
+    text-align: center;
+}
+.jk_head_top .jk_head_top_right .list:hover{
+    color: blue;
+}
+.jk_head_top .jk_head_top_right .list:hover .second-list{
+    color: #666;
+}
+.jk_head_top .jk_head_top_right .list:nth-of-type(n+2):hover{
+    background: white
+}
+.list .second-list{
+    display: none;
+    background: #fff;
+}
+.list .second-list li:hover{
+    color: skyblue;
+}
+.jk_nav{
+    position: relative;
+}
+.jk_nav .second-list{
+    width: 1200px;
+    height: 270px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    padding: 26px 0 28px;
+    background: #fff;
+    display: none;
+    z-index: 998;
+    text-align: left;
+    background: #fff;
+    
+}
+.jk_nav .second-list a{
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+    margin-right: 20px;
+
+}
+.jk_nav .second-list a{
+    width: 60px;
+    text-align: center;
+    border-radius: 3px;
+  
+}
+.jk_nav .second-list .one a{
+    width: 80px;
+  
+}
+.jk_nav .second-list .one{
+    float: left;
+    width: 600px;
+    border-right: 1px solid #999;
+    margin-left: 10px;
+    height: 270px;
+    /* box-sizing: border-box; */
+}
+.jk_nav .second-list .two{
+    float: left;
+    width: 250px;
+    margin-left: 10px;
+    border-right: 1px solid #999;
+    height: 270px;
+    /* box-sizing: border-box; */
+}
+.jk_nav .second-list .three{
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+    border-right: 1px solid #999;
+    height: 270px;
+    /* box-sizing: border-box; */
+}
+.jk_nav .second-list .four{
+    float: left;
+    width: 100px;
+    margin-left: 10px;
+    height: 270px;
+    /* box-sizing: border-box; */
+}
+.jk_nav .second-list .ul_list{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 11px;
+    color: #0691f9;
+}
+.jk_nav .second-list a:hover{
+background: blue;
+color: #fff;
+
+}
