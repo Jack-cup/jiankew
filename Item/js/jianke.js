@@ -24,8 +24,16 @@ $(() => {
         $(this).children(".second-list").stop().slideToggle(200);
     })
 
+    //
+    $.ajax({
+        type: "get",
+        url: "../server/nav.php",
+        dataType: "json",
+        success: function (response) {
+            console.log(response);
 
-
+        }
+    });
 
 
 
