@@ -1,0 +1,36 @@
+
+
+
+.box1 .check{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 100%;
+    height: 20px;
+}
+.box1 .check-l{
+    position: absolute;
+    left: 0;
+    font-size: 10px;
+    font-weight: 100;
+    background: #999;
+    text-align:center;
+    line-height: 50px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.box1 .check-r{
+    position: absolute;
+    right: 0;
+    font-size: 10px;
+    font-weight: 100;
+    background: #999;
+    text-align:center;
+    line-height: 50px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+
+

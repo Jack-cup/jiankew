@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./slider.css">
+    <script src="./slider.js"></script>
+    <script src="./jquery-3.4.1.js"></script>
+
+</head>
+
+<body>
+
+    <script>
+        window.onload = function () {
+            $.ajax({
+                type: "get",
+                url: "./slider.php",
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    let oSlider = new Slider(data);
+                    oSlider.init()
+
+
+                },
+                error() {
+                    console.log("请求失败");
+
+                }
+            });
+
+
+
+
+
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>
