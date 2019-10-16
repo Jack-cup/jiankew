@@ -17,6 +17,9 @@ li,ul,ol{
 em,i{
     font-style: normal;
 }
+a{
+    text-decoration: none;
+}
 .jk_head_top{
     width: 100%;
     height: 35px;

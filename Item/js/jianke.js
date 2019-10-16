@@ -50,7 +50,7 @@ $(() => {
             $(".jk_new2 .new").append(ul1(data[0].ul2))
             ul2(data[0].ul3)
             ul3(data[0].ul4)
-        
+
         }
     });
     $.ajax({
@@ -60,7 +60,7 @@ $(() => {
         success: function (data) {
             // console.log(data[0].ul1);
             ul4(data[0].ul5)
-        
+
         }
     });
     //link数据请求
@@ -76,8 +76,8 @@ $(() => {
                 link(o);
                 link(o1);
                 link(o2);
-                 resolve();
-    
+                resolve();
+
             }
         });
     }).then(function () {
@@ -309,12 +309,12 @@ $(() => {
 
 
     //link划入效果
-    
+
 
     function move(a, b) {
         $(a).eq(0).addClass("current")
         console.log($(b).eq(0));
-        
+
         $(b).eq(0).addClass("status")
         $(a).mouseenter(function () {
             $(this).addClass("current").siblings().removeClass("current");
