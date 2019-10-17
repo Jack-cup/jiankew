@@ -1,4 +1,11 @@
 $(() => {
+    //cookie处理
+    var name = cookie.getItem("username")
+    $(".logoo").text(name)
+    $(".logoout").click(function () {
+        cookie.removeItem("username")
+    })
+
     //头部数据请求
     $.getJSON("../server/jk_head_top.json", (data) => {
 
@@ -19,27 +26,23 @@ $(() => {
         },
     });
     //floor1数据请求
-    $.ajax({
-        type: "get",
-        url: "../server/floor1.php",
-        dataType: "json",
-        success: function (response) {
-            floor1(response)
-        }
-    });
-    //floor1数据请求
-    $.ajax({
-        type: "get",
-        url: "../server/floor.php",
-        dataType: "json",
-        success: function (response) {
-            for (var i = 0, len = response.length; i < len; i++) {
-                let floor = new Floor(response[i])
-                floor.init()
-            }
 
+    new Promise(function (resolve, reject) {
+        $.ajax({
+            type: "get",
+            url: "../server/floor1.php",
+            dataType: "json",
+            success: function (response) {
+                floor1(response)
+                resolve()
+            }
+        });
+    }).then(function () {
+        for (var i = 0, len = $(".f a").length; i < len; i++) {
+            $(".f a").eq(i).prop("href", "http://127.0.0.1/jiankew/Item/html/gml.html")
         }
-    });
+    })
+
     //new数据请求
     $.ajax({
         type: "get",
@@ -83,7 +86,26 @@ $(() => {
     }).then(function () {
         move(".l", ".jk_div_1")
     })
+    //floor数据请求
+    new Promise(function (resolve, reject) {
+        $.ajax({
+            type: "get",
+            url: "../server/floor.php",
+            dataType: "json",
+            success: function (response) {
+                for (var i = 0, len = response.length; i < len; i++) {
+                    let floor = new Floor(response[i])
+                    floor.init()
+                }
+                resolve()
 
+            }
+        });
+    }).then(function () {
+        for (var i = 0, len = $(".jk_floor a").length; i < len; i++) {
+            $(".jk_floor a").eq(i).prop("href", "http://127.0.0.1/jiankew/Item/html/gml.html")
+        }
+    })
     new Promise(function (resolve, reject) {
         $.ajax({
             type: "post",
@@ -95,6 +117,9 @@ $(() => {
             },
         });
     }).then(function () {
+        for (var i = 0, len = $(".jk_banner_l a").length; i < len; i++) {
+            $(".jk_banner_l a").eq(i).prop("href", "http://127.0.0.1/jiankew/Item/html/list.html")
+        }
         $(".nav_li").hover(function () {
             var index = $(this).index()
             $(".jk_animate").eq(index).toggle()
@@ -324,6 +349,14 @@ $(() => {
     }
     let oSlider1 = new Slider1();
     oSlider1.init();
+
+    $(".gb").click(function (event) {
+        event.preventDefault()
+        $(".online").stop().fadeOut()
+
+    })
+
+
 
 
 

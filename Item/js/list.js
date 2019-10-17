@@ -180,11 +180,7 @@ $(() => {
             $(".main_list").eq(index).slideToggle(300)
         })
     })
-    //page监听
 
-
-
-    /* 先给页面添加点击事件，当点击的时候获取页码值，根据该值发送网络请求 */
 
 
     /* 处理排序 */
@@ -194,7 +190,11 @@ $(() => {
 
     $(".foot").load("./home.html .jk_footer");
 
+    $(".gb").click(function (event) {
+        event.preventDefault()
+        $(".online").stop().fadeOut()
 
+    })
 
 
 

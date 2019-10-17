@@ -722,7 +722,7 @@
 .jk_list_main .main_right .mainlist .box-list .item .item-box .list-content {
   width: 206px;
   margin: 20px auto;
-  font-family: "宋体";
+  font-family: "å®‹ä½“";
 }
 .jk_list_main .main_right .mainlist .box-list .item .item-box .list-content span {
   font-size: 18px;
@@ -1001,4 +1001,38 @@
   position: absolute;
   top: 15px;
   right: 0;
+}
+.online {
+  display: block;
+  z-index: 999999;
+  left: 50%;
+  top: 50%;
+  position: fixed !important;
+  margin-left: -211px !important;
+  margin-top: -110px !important;
+  position: relative;
+}
+.online .sh {
+  display: block;
+  width: 94px;
+  height: 31px;
+  position: absolute;
+  left: 133px;
+  bottom: 20px;
+}
+.online .dj {
+  display: block;
+  width: 94px;
+  height: 31px;
+  position: absolute;
+  left: 243px;
+  bottom: 20px;
+}
+.online .gb {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 360px;
+  top: 14px;
 }
