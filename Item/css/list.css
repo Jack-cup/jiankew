@@ -636,11 +636,15 @@
   background: #1369c0;
   border: 1px solid #1369c0;
   left: -1px;
+<<<<<<< HEAD
   text-align: center;
+=======
+>>>>>>> 2f1a82f47de62aea58b4927aba8c25832c9cdfb0
 }
 .jk_list_main .main_right .mainlist .pro-listop .listop-left .pro-list-on a {
   color: #fff;
   float: left;
+<<<<<<< HEAD
   margin-left: 14px;
 }
 .jk_list_main .main_right .mainlist .pro-listop .listop-left .price-icon {
@@ -648,6 +652,19 @@
 }
 .jk_list_main .main_right .mainlist .pro-listop .listop-left .price-icon a:hover {
   color: #005aa0;
+=======
+}
+.jk_list_main .main_right .mainlist .pro-listop .listop-left .price-icon {
+  width: 40px;
+}
+.jk_list_main .main_right .mainlist .pro-listop .listop-left .price-icon i {
+  float: right;
+  width: 11px;
+  height: 12px;
+  margin-top: 8px;
+  background: url(//image.jianke.com/jksearch/images/pc/icon.png) no-repeat left -119px;
+  background-position: left -136px;
+>>>>>>> 2f1a82f47de62aea58b4927aba8c25832c9cdfb0
 }
 .jk_list_main .main_right .mainlist .pro-listop .listop-right {
   float: right;
@@ -722,10 +739,17 @@
 .jk_list_main .main_right .mainlist .box-list .item .item-box .list-content {
   width: 206px;
   margin: 20px auto;
+<<<<<<< HEAD
   font-family: "å®‹ä½“";
 }
 .jk_list_main .main_right .mainlist .box-list .item .item-box .list-content span {
   font-size: 18px;
+=======
+  font-family: "宋体";
+}
+.jk_list_main .main_right .mainlist .box-list .item .item-box .list-content span {
+  font-size: 14px;
+>>>>>>> 2f1a82f47de62aea58b4927aba8c25832c9cdfb0
   color: #e4393c;
 }
 .jk_list_main .main_right .mainlist .box-list .item .item-box .list-content i {
@@ -742,9 +766,12 @@
   overflow: hidden;
   font-size: 12px;
 }
+<<<<<<< HEAD
 .jk_list_main .main_right .mainlist .box-list .item .item-box .list-content p a {
   color: #666;
 }
+=======
+>>>>>>> 2f1a82f47de62aea58b4927aba8c25832c9cdfb0
 .jk_list_main .main_right .mainlist .box-list .item .item-box .list-content .gwc {
   position: relative;
 }
@@ -757,6 +784,7 @@
   text-align: center;
   background: #e4393c;
   margin-top: 13px;
+<<<<<<< HEAD
   font-size: 12px;
 }
 .jk_footer .jkn_ser {
@@ -1035,4 +1063,6 @@
   position: absolute;
   left: 360px;
   top: 14px;
+=======
+>>>>>>> 2f1a82f47de62aea58b4927aba8c25832c9cdfb0
 }

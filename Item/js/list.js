@@ -25,6 +25,7 @@ $(() => {
         })
     })
     //mainlist
+<<<<<<< HEAD
     function getmaindata(page, type) {
         $.ajax({
             type: "get",
@@ -61,6 +62,18 @@ $(() => {
 
         })
     })
+=======
+    // function getmaindata(page, type) {
+    $.ajax({
+        type: "get",
+        url: "../server/list.php",
+        // data: `page=${page}&sortType=${type}`,
+        dataType: "json",
+        success: (data) => renderUI(data)
+    });
+    // }
+
+>>>>>>> 2f1a82f47de62aea58b4927aba8c25832c9cdfb0
     //头部渲染
     function renderHeaderTop(data) {
         let html1 = data.data1.map((ele) => `<a href="">${ele}</a>`).join("")
@@ -138,7 +151,11 @@ $(() => {
                     <div class="item-box">
                         <img src=${ele.src}>
                         <div class="list-content">
+<<<<<<< HEAD
                          <span>￥${ele.price}.0</span><i>${ele.price1}</i>
+=======
+                         <span>${ele.price}</span><i>${ele.price1}</i>
+>>>>>>> 2f1a82f47de62aea58b4927aba8c25832c9cdfb0
                          <p class="cont"><a href="">${ele.content}</a></p>
                          <div class="gwc"><a href="">加入购物车</a></div>
                         </div>
@@ -183,6 +200,7 @@ $(() => {
 
 
 
+<<<<<<< HEAD
     /* 处理排序 */
     $(".price-icon").click(function () {
         getmaindata(1, $(this).index());
@@ -195,6 +213,9 @@ $(() => {
         $(".online").stop().fadeOut()
 
     })
+=======
+
+>>>>>>> 2f1a82f47de62aea58b4927aba8c25832c9cdfb0
 
 
 
